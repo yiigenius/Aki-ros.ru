@@ -1,0 +1,80 @@
+.header__top {
+	background-color: $gray-dark;
+	color: $beige-light;
+	line-height: 50px;
+}
+
+.header__description {
+	text-transform: uppercase;
+	letter-spacing: .3em;
+	font-size: 14px;
+}
+
+.header__lang__item {
+	display: block;
+	float: left;
+	margin: 0;
+	width: 50%;
+	text-align: center;
+	color: $beige-light;
+	text-decoration: none;
+	@include tr-03;
+
+	&:hover {
+		color: $light;
+		background-color: rgba($beige-light,.2);
+	}
+}
+
+.header__lang__item-active, .header__lang__item-active:hover {
+	color: $red-default;
+	background-color: $beige-light;
+}
+
+.header__logo {
+	padding: 50px 0;
+}
+
+.header__nav  {
+	text-align: right;
+	margin-top: 50px;
+
+	ul li {
+		display: inline-block;
+		margin-left: 20px;
+
+		a {
+			height: 59px;
+			line-height: 60px;
+			display: block;
+			position: relative;
+			font-size: 14px;
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+			@include tr-03;
+
+			span {
+				position: absolute;
+				background-color: $red-default;
+				width: 0;
+				height: 2px;
+				left: 0;
+				bottom: 0px;
+				@include tr-03;
+			}
+		}
+
+		a:hover {
+			color: $red-default;
+
+			span {
+				width: 100%;
+			}
+		}
+
+		a.active {
+			color: $red-default;
+		}
+	}
+}

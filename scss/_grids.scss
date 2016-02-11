@@ -1,0 +1,205 @@
+@import "susy";
+
+$susy: (
+	columns: 12,
+	gutters: .44,
+	// math: fluid,
+	// gutter-position: after,
+	// column-width: false,
+	// container-position: center,
+	container: 71em, // 1140px
+	// global-box-sizing: content-box,
+
+	// debug: (
+	// 	image: show,
+	// 	output: overlay,
+	// 	toggle: top right,
+	// 	color: rgba(#66f, .25),
+	// 	)
+	);
+
+
+
+
+// Header grid
+
+.header__center {
+	@include container();
+}
+
+.header__description {
+	@include span(9);
+}
+
+.header__lang {
+	@include span(3 last);
+}
+
+.header__logo {
+	@include span(3);
+
+	@include MQ(S) {
+		@include span(4);
+		@include push(4);
+	}
+}
+
+.header__nav {
+	@include span(9 last);
+
+	@include MQ(S) {
+		@include span(12);
+		text-align: center !important;
+		margin-top: 0 !important;
+	}
+}
+
+// Promo grid index page
+
+.promo {
+	@include container();
+}
+
+.promo__regions {
+	@include span(3 last);
+
+	@include MQ(S) {
+		display: none;
+	}
+}
+
+.promo__slider {
+	@include span(9);
+}
+
+// Nav grid index page
+
+.nav-site {
+	@include container();
+}
+
+
+
+// Prefooter grid index & news_view pages
+
+.prefooter__center {
+	@include container();
+}
+
+.prefooter__news-group {
+	@include span(3);
+
+	&:nth-of-type(4n) {
+		@include span(3 last);
+	}
+}
+
+
+// Footer grid
+
+.footer__center {
+	@include container();
+}
+
+.footer__col {
+	@include span(4);
+
+	&:nth-of-type(3n) {
+		@include span(4 last);
+	}
+}
+
+
+
+// News list
+
+.news-list {
+	@include span(12);
+}
+
+.news-item-grid {
+	@include span(3);
+
+	&:nth-of-type(4n) {
+		@include span(3 last);
+	}
+}
+
+
+
+// Group page
+
+.section {
+	@include container();
+
+	&__title {
+		@include push(1);
+	}
+
+	&__nav {
+		@include push(1);
+	}
+}
+
+.group-page, .group-region-page {
+	@include container();
+}
+
+.paginator {
+	@include container();	
+}
+
+
+
+// News_view page
+
+.path {
+	@include container();
+}
+
+.news-view {
+	@include container();
+
+	&__info {
+		@include span (2);
+	}
+
+	&__header-content {
+		@include span (10 last);
+	}
+
+	&__photo {
+		@include span(8);
+		@include push(2);
+	}
+
+	&__photo-description {
+		@include span (2 last);
+	}
+
+	&__content {
+		@include span (10 last);
+		clear: both;
+	}
+
+	&__fotorama {
+		@include span (8);
+		@include push(2);
+	}
+}
+
+
+
+// Parthners page
+
+.parthners {
+	@include container();
+}
+
+.parthner__logo {
+	@include span(6);
+}
+
+.parthner__info {
+	@include span(6 last);
+}

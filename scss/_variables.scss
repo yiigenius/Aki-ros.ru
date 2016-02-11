@@ -1,0 +1,39 @@
+// Colors ///////////////////////////////////
+
+$light: 				#fff;
+$dark:          #000;
+$gray-dark:			#252424;
+$gray-light:    #99938A;
+$beige-light:		#FAF7F3;
+$beige-dark:		#EDE9E1;
+$red-default:		#CD483F;
+
+// Sizes ////////////////////////////////////
+
+$XS:	480px;
+$S:		768px;
+$M:		1024px;
+$L:		1170px;
+
+// Mixins //////////////////////////////////
+
+@mixin tr-01 {transition: all 0.1s ease;}
+@mixin tr-02 {transition: all 0.2s ease;}
+@mixin tr-03 {transition: all 0.3s ease;}
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == XS {
+   @media only screen and (max-width: $XS) { @content; } 
+  }
+  @else if $canvas == S {
+   @media only screen and (max-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (max-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (max-width: $L) { @content; } 
+  }
+}

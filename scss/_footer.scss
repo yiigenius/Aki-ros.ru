@@ -1,0 +1,58 @@
+.footer {
+	background-color: $gray-dark;
+	padding: 60px 0;
+	line-height: 34px;
+	color: $gray-light;
+
+	a {
+		color: $gray-light;
+		font-size: .9em;
+
+		&:hover {
+			color: $light;
+		}
+	}
+
+	&__social {
+		margin: 42px 0;
+		overflow: hidden;
+
+		&__icon {
+			display: block;
+			width: 50px;
+			height: 50px;
+			float: left;
+			margin-right: 20px;
+
+			&.facebook {
+				background-image: url(../i/ico_facebook.svg);
+			}
+
+			&.twitter {
+				background-image: url(../i/ico_twitter.svg);
+			}
+
+			&.vk {
+				background-image: url(../i/ico_vk.svg);
+			}
+
+			&:hover {
+				opacity: .75;
+			}
+		}
+	}
+
+	&__design {
+		clear: both;
+		font-size: .9em;
+
+		a {
+			color: $light;
+
+			&:hover {
+				color: $gray-light;
+			}
+		}
+	}
+}
+

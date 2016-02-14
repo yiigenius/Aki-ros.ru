@@ -570,10 +570,7 @@ iframe {
   .paginator__item {
     display: block;
     border: 2px solid #EDE9E1;
-    width: 50px;
-    line-height: 50px;
-    margin: 0 5px;
-    color: #252424; }
+    margin: 0 5px; }
     .paginator__item.active {
       border-color: #CD483F;
       color: #CD483F; }
@@ -584,6 +581,11 @@ iframe {
     .paginator__item:hover {
       border-color: #b4a381;
       background-color: #f7f2ec; }
+    .paginator__item a {
+      width: 50px;
+      line-height: 50px;
+      display: block;
+      color: #252424; }
 
 .footer {
   background-color: #252424;

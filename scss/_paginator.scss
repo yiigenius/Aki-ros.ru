@@ -9,10 +9,7 @@
 	&__item {
 		display: block;
 		border: 2px solid $beige-dark;
-		width: 50px;
-		line-height: 50px;
 		margin: 0 5px;
-		color: $gray-dark;
 
 		&.active {
 			border-color: $red-default;
@@ -28,6 +25,13 @@
 		&:hover {
 			border-color: darken($beige-dark, 30%);
 			background-color: darken($beige-light, 2%);
+		}
+
+		a {
+			width: 50px;
+			line-height: 50px;
+			display: block;
+			color: $gray-dark;
 		}
 	}
 }

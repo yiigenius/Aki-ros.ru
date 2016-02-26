@@ -188,6 +188,18 @@ $susy: (
 	}
 }
 
+// About page
+
+.inside-view__about {
+	@include span(8 of 10);
+}
+
+.inside-view__content {
+	@include span (8);
+	@include push(2);
+	clear: both;
+}
+
 
 
 // Parthners page
@@ -202,4 +214,18 @@ $susy: (
 
 .parthner__info {
 	@include span(6 last);
+}
+
+//  Contacts page
+
+.contacts {
+	@include container();
+
+	&__map {
+		@include span(6);
+	}
+
+	&__info {
+		@include span(6 last);
+	}
 }

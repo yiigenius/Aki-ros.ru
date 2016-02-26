@@ -2,6 +2,18 @@
 	margin-bottom: 60px;
 }
 
+.parthner__item {
+	margin-bottom: 60px;
+
+	&:after {
+		visibility: hidden;
+		display: block;
+		clear: both;
+		content: " ";
+		height: 0;
+	}
+}
+
 .parthner__logo {
 	text-align: center;
 	padding: 150px 0;

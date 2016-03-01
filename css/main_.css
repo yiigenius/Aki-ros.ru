@@ -279,15 +279,6 @@ iframe {
     float: right;
     margin-right: 0; }
 
-.peoples__item {
-  width: 31.5914489311%;
-  float: left;
-  margin-right: 2.6128266033%; }
-  .peoples__item:last-child {
-    width: 31.5914489311%;
-    float: right;
-    margin-right: 0; }
-
 .header__top {
   background-color: #252424;
   color: #FAF7F3;
@@ -685,18 +676,8 @@ iframe {
 
 .contacts {
   margin-bottom: 60px; }
-  .contacts__peoples {
-    margin-bottom: 40px;
-    overflow: hidden;
-    line-height: 1.5em;
-    font-size: 18px; }
   .contacts__info {
     line-height: 1.5em;
     font-size: 18px; }
-
-.peoples__name {
-  font-size: 24px;
-  line-height: 1.1em;
-  margin-bottom: 20px; }
 
 /*# sourceMappingURL=main.css.map */

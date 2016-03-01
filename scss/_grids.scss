@@ -229,3 +229,13 @@ $susy: (
 		@include span(6 last);
 	}
 }
+
+.peoples {
+	&__item {
+		@include span(4);
+
+		&:last-child {
+			@include span(4 last);
+		}
+	}
+}
